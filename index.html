@@ -1,494 +1,305 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="The Wedding of Amel & Ridwan">
-    <meta property="og:description" content="Undangan Pernikahan Amel & Ridwan">
-    <meta property="og:image" content="https://ridwan-amel.vercel.app/img/preview.webp">
-    <meta property="og:url" content="https://ridwan-amel.vercel.app/">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Wedding of Amel & Ridwan">
-    <meta name="twitter:description" content="Undangan Pernikahan Amel & Ridwan">
-    <meta name="twitter:image" content="https://ridwan-amel.vercel.app/img/preview.webp">
-
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/animasi.css">
-    <link rel="stylesheet" href="./style/embed.css"
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Alex+Brush&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <title>Amel & Ridwan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/animasi.css">
+  <title>Wedding Deva & Zaidan</title>
 </head>
+
 <body>
+  <div class="container">
 
-    <div class="pembungkus">
+    <div class="music-cover" id="musicCover">
+      <div class="cover-inner">
 
-        <div class="music-cover" id="musicCover">
+        <img src="./img/cover.jpeg" alt="cover">
 
-            <div class="cover-inner">
+        <!-- TEXT OVERLAY -->
+        <div class="cover-text">
+          <p class="top-text ">THE WEDDING OF</p>
+          <h1>Deva & Zaidan</h1>
 
-                <img src="./img/BACKGROUND.webp" alt="Background">
-
-                <div class="cover-text">
-                    <p class="top-text">THE WEDDING OF</p>
-                    <h1>Amel &amp; Ridwan</h1>
-
-                </div>
-
-                <!-- AMPLOP -->
-                <div class="music-btn-wrap">
-
-                    <img 
-                        src="./img/AMPLOP.webp" 
-                        alt="Buka Undangan" 
-                        class="music-btn-img" 
-                        id="musicBtn"
-                    >
-
-                    <span 
-                        class="music-btn-img__label" 
-                        id="musicBtnLabel"
-                    >
-                        Tap to Open
-                    </span>
-
-                    <!-- NAMA TAMU -->
-                    <div class="guest" id="guestWrap">
-                        <p>Kepada Yth.</p>
-
-                        <h3 id="namaTamu">
-                            Bapak/Ibu/Saudara/i
-                        </h3>
-                    </div>
-
-                </div>
-
-            </div>
-
+          <div class="guest">
+            <p>Yang Terhormat,</p>
+            <h3 id="guestName">Nama Tamu</h3>
+          </div>
         </div>
 
-
-        <audio 
-            id="musikLatar" 
-            src="./audio/nadin.mp3" 
-            loop 
-            preload="auto"
-        ></audio>
-
-        <div id="pageContainer"></div>
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero" id="hero">
-
-            <img 
-                class="hero__latar" 
-                src="./img/BACKGROUND.webp" 
-                alt="Background"
-            >
-
-            <div class="hero__gradasi"></div>
-
-            <div class="hero__konten">
-
-                <img 
-                    class="hero__bingkai" 
-                    src="./img/NAME.webp" 
-                    alt="Amel & Ridwan"
-                >
-
-                <p class="hero__judul">
-                    Are getting married
-                </p>
-
-                <p class="hero__tanggal">
-                    04 OKTOBER 2026
-                </p>
-
-                <p class="hero__lokasi">
-                    Gedung Serbaguna Wirabrata
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- =========================
-             PASANGAN
-        ========================== -->
-        <section class="pasangan">
-
-            <div class="pasangan__foto-wrap">
-
-                <img 
-                    class="pasangan__foto" 
-                    src="./img/isi.webp" 
-                    alt="Foto Amel & Ridwan"
-                >
-
-            </div>
-
-            <div class="pasangan__konten">
-
-                <p class="pasangan__label">
-                    The Wedding Of
-                </p>
-
-                <h2 class="pasangan__nama">
-                    Amel &amp; Ridwan
-                </h2>
-
-                <div class="pasangan__garis"></div>
-
-                <p class="pasangan__teks">
-                    Dengan penuh syukur kepada Tuhan Yang Maha Esa, kami
-                    mengundang Bapak/Ibu/Saudara/i untuk hadir dan
-                    memberikan doa restu dalam acara pernikahan kami.
-                </p>
-
-                <p class="pasangan__lokasi">
-                    Gedung Serbaguna Wirabrata<br>
-                    Jl. Raya Cikampek-Parakan, Cikampek Utara,
-                    Kec. Kotabaru, Karawang, Jawa Barat
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- =========================
-             DETAIL ACARA
-        ========================== -->
-        <section class="detail-acara">
-
-            <p class="detail-acara__judul">
-                DETAIL ACARA
-            </p>
-
-
-            <article class="detail-acara__item">
-                
-                <h2 class="detail-acara__nama">
-                    Akad Nikah
-                </h2>
-                <p class="detail-acara__jam">
-                    09.00 WIB
-                </p>
-
-
-                <p class="detail-acara__tanggal">
-                    Minggu, 4 Oktober 2026
-                </p>
-
-                <p class="detail-acara__lokasi">
-                    Gedung Serbaguna Wirabrata<br>
-                    Jl. Raya Cikampek-Parakan, Karawang
-                </p>
-
-            </article>
-
-
-            <article class="detail-acara__item">
-                
-                <h2 class="detail-acara__nama">
-                    Resepsi Pernikahan
-                </h2>
-                <p class="detail-acara__jam">
-                    11.00 WIB
-                </p>
-
-
-                <p class="detail-acara__tanggal">
-                    Minggu, 4 Oktober 2026
-                </p>
-
-                <p class="detail-acara__lokasi">
-                    Gedung Serbaguna Wirabrata<br>
-                    Jl. Raya Cikampek-Parakan, Karawang
-                </p>
-
-            </article>
-
-
-            <a
-                href="https://maps.app.goo.gl/BNoYxcXxL6wv4bES8"
-                target="_blank"
-                rel="noopener"
-                class="detail-acara__maps"
-            >
-                BUKA LOKASI DI MAPS
-            </a>
-
-
-        </section>
-
-        <section class="hitung-mundur">
-
-            <h2 class="hitung-mundur__judul">
-        The countdown is on!
-            </h2>
-
-            <div 
-                class="hitung-mundur__waktu" 
-                id="hitungMundur"
-            >
-
-                <div class="hitung-mundur__satuan">
-
-                    <span 
-                        class="hitung-mundur__angka" 
-                        id="hari"
-                    >
-                        00
-                    </span>
-
-                    <span class="hitung-mundur__label">
-                        Days
-                    </span>
-
-                </div>
-
-                <span class="hitung-mundur__titik">:</span>
-
-
-                <div class="hitung-mundur__satuan">
-
-                    <span 
-                        class="hitung-mundur__angka" 
-                        id="jam"
-                    >
-                        00
-                    </span>
-
-                    <span class="hitung-mundur__label">
-                        Hours
-                    </span>
-
-                </div>
-
-                <span class="hitung-mundur__titik">:</span>
-
-
-                <div class="hitung-mundur__satuan">
-
-                    <span 
-                        class="hitung-mundur__angka" 
-                        id="menit"
-                    >
-                        00
-                    </span>
-
-                    <span class="hitung-mundur__label">
-                        Minutes
-                    </span>
-
-                </div>
-
-                <span class="hitung-mundur__titik">:</span>
-
-
-                <div class="hitung-mundur__satuan">
-
-                    <span 
-                        class="hitung-mundur__angka" 
-                        id="detik"
-                    >
-                        00
-                    </span>
-
-                    <span class="hitung-mundur__label">
-                        Seconds
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             OUR STORY
-        ========================== -->
-        <section class="cerita-kami card-embed" id="cardStory">
-
-                <img 
-                    class="cerita-kami__bingkai" 
-                    src="./img/story.webp" 
-                    alt="Cerita Amel & Ridwan"
-                >
-
-            <span class="cerita-kami__judul card-embed__trigger-label" aria-hidden="true">
-                Our Story
-            </span>
-
-            <div class=" story-embed" id="panelStory">
-                <div class="ls-card">
-
-
-
-                    <div class="ls-timeline">
-
-                        <article class="ls-entry">
-                            <h2 class="ls-entry__date">Ramadhan 1446 H</h2>
-                            <p class="ls-entry__text">Pernah berada di bawah atap yang sama bertahun-tahun lamanya, satu sapaan sederhana justru menjadi awal dari cerita yang tak pernah direncanakan. Kenyamanan hadir begitu alami, dan ketenangan tumbuh tanpa perlu dipaksa. Takdir memilih waktunya sendiri untuk saling mempertemukan.</p>
-                        </article>
-
-                        <article class="ls-entry">
-                            <h2 class="ls-entry__date">28 Juni 2026</h2>
-                            <p class="ls-entry__text">Kebersamaan ini tak hadir dengan riuh yang meledak-ledak. Ia tumbuh dengan tenang, penuh rasa aman dan kehangatan—sebuah keberanian yang akhirnya menghantarkan dua keluarga saling mendekap, menyimpul janji dalam ikatan khitbah.</p>
-                        </article>
-
-                        <article class="ls-entry">
-                            <h2 class="ls-entry__date">4 Oktober 2026</h2>
-                            <p class="ls-entry__text">Hingga akhirnya, perjalanan doa-doa sunyi menemukan muaranya. Di hadapan semesta dan orang-orang terkasih, dua jiwa merajut ikrar suci untuk saling menggenggam—kini, besok, dan selamanya.</p>
-                        </article>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =========================
-             RSVP
-        ========================== -->
-        <section class="rsvp">
-
-            <p class="rsvp__info">
-                MOHON KONFIRMASI SEBELUM 04 OKTOBER 2026
-            </p>
-
-            <form class="rsvp__form" id="rsvpForm">
-
-                <div class="rsvp__field">
-                    <label for="guestName">Nama Anda</label>
-
-                    <input
-                        type="text"
-                        id="guestName"
-                        name="guestName"
-                        autocomplete="name"
-                        required
-                    >
-                </div>
-
-
-                <div class="rsvp__field">
-
-                    <label>
-                        Apakah Anda akan hadir di pernikahan kami?
-                    </label>
-
-                    <div class="rsvp__attendance">
-
-                        <button
-                            type="button"
-                            class="rsvp__option active"
-                            data-value="Hadir dengan senang hati"
-                        >
-                            Hadir dengan senang hati
-                        </button>
-
-                        <button
-                            type="button"
-                            class="rsvp__option"
-                            data-value="Mohon maaf belum bisa hadir"
-                        >
-                            Mohon maaf belum bisa hadir
-                        </button>
-
-                    </div>
-
-                    <input
-                        type="hidden"
-                        id="attendance"
-                        name="attendance"
-                        value="Hadir dengan senang hati"
-                    >
-
-                </div>
-
-
-                <div class="rsvp__field">
-
-                    <label for="wishMessage">
-                        Ucapan &amp; Doa
-                    </label>
-
-                    <textarea
-                        id="wishMessage"
-                        name="wishMessage"
-                        placeholder="Tuliskan ucapan selamat dan doa terbaik Anda..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="rsvp__submit"
-                    id="submitBtn"
-                >
-                    KIRIM RSVP
-                </button>
-
-                <div
-                    class="rsvp__status"
-                    id="statusMsg"
-                    aria-live="polite"
-                ></div>
-
-            </form>
-
-
-            <p class="rsvp__note">
-                Data Anda hanya digunakan untuk keperluan acara ini.
-            </p>
-
-        </section>
-
-<section class="gift-section">
-  <div class="gift-label">Tanda Kasih</div>
- 
-  <div class="gift-card">
-    <div class="gift-bank-logo">
-      <img src="./img/BRI_2025.webp" alt="Logo BRI">
+        <!-- BUTTON -->
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+          Buka Undangan
+        </button>
+
+      </div>
     </div>
- 
-    <div class="gift-rekening-number" id="rekNumber">7222 0101 4834 535</div>
-    <div class="gift-owner-name">a.n. Muhammad Ridwan</div>
- 
-    <button class="gift-copy-btn" onclick="salinRekening()" id="copyBtn">Salin Nomor</button>
+
+    <div class="thumbnail">
+      <div class="thmb-img">
+        <img src="./img/isi.jpeg" alt="" class="bg-img">
+        <img src="./img/FRAME.webp" alt="" class="frame">
+
+        <div class="thmb-text">
+          <p class="color">THE WEDDING OF</p>
+          <h2>Deva & Zaidan</h2>
+          <p>Minggu, 29 November 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-section">
+
+      <p class="quote-text">
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+        agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+        Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir"
+      </p>
+
+      <p class="quote-source">(QS Ar Rum : 21)</p>
+
+      <div class="date">
+        <div class="date-img">
+          <img src="./img/logo-wedding-brown.png" alt="">
+        </div>
+
+        <div class="countdown">
+          <h2 class="fade-down">Our Special Day</h2>
+
+          <div class="time-box">
+            <div class="time fade-down">
+              <h3 id="days">0</h3>
+              <p>Days</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="hours">0</h3>
+              <p>Hours</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="minutes">0</h3>
+              <p>Minutes</p>
+            </div>
+            <div class="time fade-down">
+              <h3 id="seconds">0</h3>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="profil-section">
+      <img src="./img/bg-flower.webp" alt="" class="profil-section-bg">
+
+      <div class="profil">
+
+        <!-- Ornamen pojok kanan atas -->
+        <img src="./img/flower-ornamen.webp" alt="" class="ornamen-tr">
+
+        <!-- Ornamen pojok kiri bawah -->
+        <img src="./img/flower-ornamen.webp" alt="" class="ornamen-bl">
+
+        <!-- Konten -->
+        <div class="profil-text">
+          <p class="fade-down">
+            Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian
+            untuk menghadiri acara Pernikahan kami :
+          </p>
+        </div>
+
+        <div class="profil-img">
+          <h3 class="fade-down">زيدان زغلول فقيه</h3>
+          <div class="profil-name">
+            <h2 class="fade-up zaidan-name">Zaidan Zaghlul Faqih, S.Ap</h2>
+            <p class="fade-up">
+              Putra ke-1 <br> Bpk. Eman Sulaeman, S.P
+              & Ibu Yeni Hendriyani
+            </p>
+            <div class="dan">&</div>
+          </div>
+        </div>
+
+        <div class="profil-img-2">
+          <h3 class="fade-down">ديفا سيتي رحمة</h3>
+          <div class="profil-name">
+            <h2 class="fade-up">Deva Siti Rohmah, S.Pd </h2>
+            <p class="fade-up">
+              Putri ke-1 <br> Bpk.Subhan
+              & Ibu Helda Subaria 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="event-section">
+    <div class="event-card">
+<div class="card-ornament card-ornament--bottom" aria-hidden="true">
+    <img src="./img/flower-2.webp" alt="">
   </div>
- 
-  <p class="gift-closing">
-    Doa restu Anda adalah karunia yang paling berarti bagi kami.
+        <h2 class="event-title fade-down">AKAD NIKAH</h2>
+
+        <div class="event-date">
+          <span class="day-label fade-down">Minggu </span>
+          <span class="day-number fade-up"><h1>29</h1></span>
+          <span class="month-label fade-up">November</span>
+          <span class="year-label fade-up">2026</span>
+        </div>
+
+        <p class="event-time fade-down">Pukul : 08:00 WIB</p>
+        <p class="event-place fade-down">
+          Tempat : <br><strong>Kediaman Mempelai Wanita</strong><br>
+Kp. Lembur Gede Rt/Rw 002/002 Desa Jatiragas Kec. Jatisari Kab. Karawang Kode pos. 41374        </p>
+
+        <a href="https://maps.app.goo.gl/wLz6gzKuna8C7nk16" class="btn-lokasi">
+          Lihat Lokasi
+        </a>
+
+        <div class="card-ornament card-ornament--top" aria-hidden="true">
+    <img src="./img/flower-2.webp" alt="">
+  </div>
+      </div>
+
+
+<div class="event-card">
+  <div class="card-ornament card-ornament--bottom" aria-hidden="true">
+    <img src="./img/flower-2.webp" alt="">
+  </div>
+
+          <h2 class="event-title fade-down">RESEPSI</h2>
+
+          <div class="event-date">
+          <span class="day-label fade-down">Minggu </span>
+          <span class="day-number fade-up"><h1>29</h1></span>
+          <span class="month-label fade-up">November</span>
+          <span class="year-label fade-up">2026</span>
+        </div>
+
+        <p class="event-time fade-down">Pukul : 10:00 WIB</p>
+        <p class="event-place fade-down">
+          Tempat : <br><strong>Kediaman Mempelai Wanita</strong><br>
+Kp. Lembur Gede Rt/Rw 002/002 Desa Jatiragas Kec. Jatisari Kab. Karawang Kode pos. 41374        </p>
+
+        <a href="https://maps.app.goo.gl/wLz6gzKuna8C7nk16" class="btn-lokasi">
+          Lihat Lokasi
+        </a>
+
+
+  <div class="card-ornament card-ornament--top" aria-hidden="true">
+    <img src="./img/flower-2.webp" alt="">
+  </div>
+</div>
+
+</div>
+
+    </section>
+
+    <section class="love-story">
+      <h2 class="judul"></h2>
+      <div class="card">
+        <img src="./img/love.png" alt="couple" class="gambar">
+        <div class="konten">
+          <h3 class="fade-down">Asmaraloka</h3>
+          <p class="fade-blur">Sebuah kisah cinta yang tanpa di sengaja jadi mendatangkan haru bahagia untuk keluarga.</p>
+
+          <h3 class="fade-down">Love Story</h3>
+          <p class="fade-blur">
+            Awal bertemu (07 Agustus 2025)
+Siapa sangka, lewat pesan bercandaan nya menjadi awal dari perjalanan panjang kami. Dari sekadar membalas balasan story yang tidak (sengaja lewat) layar ponsel kami mempertemukan dua insan yang sebelumnya asing menjadi teman dekat.
+          </p>
+
+          <h3 class="fade-down">Engagement</h3>
+          <p class="fade-blur">
+Dengan niat baik dan penuh keseriusan,
+kami memutuskan untuk membawa
+hubungan ini ke tahap yang lebih indah.
+Tepat di tanggal 29 maret 2026 Pertemuan
+dua keluarga menjadi langkah awal
+menuju ikatan suci yang kami impikan bersama.          </p>
+
+          <h3 class="fade-down">Wedding</h3>
+          <p class="fade-blur">
+Dari pertemuan sederhana secara online, Allah mempertemukan kami dalam ikatan yang suci. Dengan restu dari kedua orang tua dan keluarga  Semoga langkah kami selalu diberkahi dan dipenuhi cinta hingga akhir hayat.  Kami berdoa agar Allah memberkahi pernikahan ini dengan sakinah, mawaddah, dan warohmah.  Aamiin..          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="gift-container">
+
+      <div class="gift-card" id="mainCard">
+        <h3>Wedding Gift</h3>
+        <p>Doa restu Bapak/Ibu Saudara/i adalah anugerah terindah bagi kami. <br>
+Namun bila hati Bapak/Ibu Saudara/i tergerak untuk berbagi,
+kami menerimanya bukan sekadar pemberian,
+melainkan jejak kasih dan sebagai titipan kebaikan. <br>
+Semoga Allah SWT balas dengan keberkahan tanpa batas.</p>
+
+        <button id="toggleBtn">Buka</button>
+
+        <div class="extra-cards" id="extraCards">
+
+          <!-- CARD 1 -->
+          <div class="sub-card">
+            <div class="rekening-row">
+              <span class="rek-nomor" id="rek1">72291687169</span>
+              <span class="rek-nama">A/N Deva Siti Rohmah</span>
+            </div>
+            <button class="copy-btn" onclick="copyRek('rek1', this)">
+              Salin
+            </button>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="sub-card">
+            <div class="rekening-row">
+              <span class="rek-nomor" id="rek2">081220625927</span>
+              <span class="rek-nama">A/N Zaidan Zaghlul Faqih</span>
+            </div>
+            <button class="copy-btn" onclick="copyRek('rek2', this)">
+              Salin
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MUSIC INDICATOR -->
+    <div class="music-indicator" id="musicIndicator" onclick="toggleMusicIndicator()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+  </div> <!-- penutup .container -->
+
+  <section class="closing-section">
+  <p class="closing-sub fade-down">Terimakasih</p>
+  <p class="closing-body fade-down">
+ atas setiap langkah yang mendekat,
+atas waktu yang diluangkan,
+dan doa-doa yang dilangitkan. 
+<br>
+<br>
+Kehadiran Bapak/Ibu/Saudara/i bukan sekadar memenuhi undangan,
+melainkan menjadi saksi awal perjalanan ibadah kami. <br> <br> <br>
   </p>
-
-    <div class="gift-footer-logo">
-        <img src="./img/logo.webp" alt="Logo BRI">
-    </div>
+  <h2 class="closing-name fade-down">Hormat Kami <br>Deva & Zaidan</h2>
 </section>
-
-    </div>
-
-    <!-- JAVASCRIPT -->
-    <script src="./js/musik.js"></script>
-    <script src="./js/generator.js"></script>
-    <script src="./js/style.js"></script>
-
+<footer class="footer-section">
+  <div class="name"><p>
+    Made With Love By
+  </p></div>
+  <img src="./img/Watermark.png" alt="logo" class="footer-logo">
+</footer>
+  <script src="./js/style.js"></script>
+  <script src="./generator/generator.js"></script>
+  <audio id="bgMusic" loop>
+  <source src="./music/Ramy Gamal – Kalimeeny Showaya Anny (Official Lyric Video) رامي جمال – كلميني شويه عني.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
