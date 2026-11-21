@@ -49,6 +49,7 @@ Merupakan suatu kehormatan besar bagi kami apabila berkenan hadir. Semoga langka
 Terima kasih atas doa dan restu nya untuk kami berdua.
 
 _Wassalamu'alaikum Warahmatullahi Wabarakatuh._
+
 Hormat kami,
 Deva & Zaidan`;
 }
