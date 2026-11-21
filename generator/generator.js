@@ -38,7 +38,6 @@ Dengan penuh rasa syukur, kami mengundang keluarga, kerabat, sahabat dan teman d
 *Zaidan Zaghlul Faqih, S.Ap*  
 Dengan
 *Deva Siti Rohmah S.Pd*
-29 November 2026
 
 Kepada Yth.
 ${nama}
