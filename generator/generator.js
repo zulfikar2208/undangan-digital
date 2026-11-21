@@ -31,11 +31,12 @@ function formatNama(nama) {
 function buatPesan(nama, link) {
     return `_Assalamu'alaikum Warahmatullahi Wabarakatuh_.
 
-Dengan memohon Rahmat dan Ridho Allah SWT, 
+Dengan memohon Rahmat dan Ridho Allah SWT,
 _Bismillahirrahmanirrahim_
+
 Dengan penuh rasa syukur, kami mengundang keluarga, kerabat, sahabat dan teman dekat untuk ikut merayakan hari bersejarah dalam hidup kami.”
 
-*Zaidan Zaghlul Faqih, S.Ap*  
+*Zaidan Zaghlul Faqih, S.Ap*
 Dengan
 *Deva Siti Rohmah S.Pd*
 
@@ -44,12 +45,10 @@ ${nama}
 
 ${link}
 
-Merupakan suatu kehormatan besar bagi kami
-apabila berkenan hadir. Semoga langkah kecil 
-ini menjadi awal yang baik bagi kehidupan rumah tangga kami. 
+Merupakan suatu kehormatan besar bagi kami apabila berkenan hadir. Semoga langkah kecil ini menjadi awal yang baik bagi kehidupan rumah tangga kami.
 Terima kasih atas doa dan restu nya untuk kami berdua.
 
-_Wassalamu'alaikum Warahmatullahi Wabarakatuh._ 
+_Wassalamu'alaikum Warahmatullahi Wabarakatuh._
 Hormat kami,
 Deva & Zaidan`;
 }
