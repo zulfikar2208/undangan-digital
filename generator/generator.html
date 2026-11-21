@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6b263b">
+    <title>Generator Link Undangan | Deva & Zaidan</title>
+    <link rel="stylesheet" href="generator.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <span class="eyebrow">WEDDING INVITATION</span>
+            <h1>Deva <span>&</span> Zaidan</h1>
+            <p>Generator Link Undangan Digital</p>
+        </header>
+
+        <section class="generator-card">
+
+            <div class="section-heading">
+                <span class="number">01</span>
+                <div>
+                    <h2>Nama Tamu</h2>
+                    <p>Masukkan nama penerima undangan.</p>
+                </div>
+            </div>
+
+            <form id="generatorForm">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Contoh: Nama Tamu"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" class="btn btn-primary">
+                    Generate Undangan
+                </button>
+            </form>
+
+            <div id="hasilGenerator" class="hasil-generator" hidden>
+
+                <div class="divider"></div>
+
+                <!-- BAGIAN LINK -->
+                <div class="section-heading">
+                    <span class="number">02</span>
+                    <div>
+                        <h2>Link Undangan</h2>
+                        <p>Link khusus untuk tamu undangan.</p>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-label">LINK UNDANGAN</div>
+                    <div id="hasil" class="link-text"></div>
+                </div>
+
+                <button type="button" id="btnCopyLink" class="btn btn-secondary">
+                    <span>▢</span> Salin Link
+                </button>
+
+                <div class="divider"></div>
+
+                <!-- BAGIAN PESAN -->
+                <div class="section-heading">
+                    <span class="number">03</span>
+                    <div>
+                        <h2>Pesan Undangan</h2>
+                        <p>Template pesan siap dibagikan.</p>
+                    </div>
+                </div>
+
+                <div class="message-box">
+                    <div class="result-label">TEMPLATE PESAN</div>
+                    <pre id="templatePesan"></pre>
+                </div>
+
+                <div class="message-actions">
+                    <button type="button" id="btnCopyPesan" class="btn btn-secondary">
+                        <span>▢</span> Salin Pesan
+                    </button>
+
+                    <button type="button" id="btnWhatsapp" class="btn btn-whatsapp">
+                        <span>◉</span> Kirim ke WhatsApp
+                    </button>
+                </div>
+
+                <p id="status" class="status" role="status" aria-live="polite"></p>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Deva & Zaidan Wedding Invitation</p>
+            <span>Made with love</span>
+        </footer>
+
+    </main>
+
+    <script src="generator.js"></script>
+</body>
+</html>
