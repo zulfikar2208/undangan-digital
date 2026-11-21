@@ -1,5 +1,11 @@
 document.body.classList.add("no-scroll");
 
+const guestName = document.getElementById("guestName");
+const guestNameParam = new URLSearchParams(window.location.search).get("to")?.trim();
+if (guestName) {
+  guestName.textContent = guestNameParam || "Nama Tamu";
+}
+
 // =============================
 // STATE
 // =============================

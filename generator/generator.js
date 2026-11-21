@@ -1,4 +1,3 @@
-
 const form = document.getElementById("generatorForm");
 const inputNama = document.getElementById("nama");
 
@@ -32,20 +31,21 @@ function formatNama(nama) {
 function buatPesan(nama, link) {
     return `Assalamu'alaikum Warahmatullahi Wabarakatuh.
 
-Tanpa mengurangi rasa hormat, izinkan kami membagikan kabar bahagia pernikahan putra-putri kami: Deva dan Zaidan
+Dengan memohon Rahmat dan Ridho Allah SWT, 
+Bismillahirrahmanirrahim
+Dengan penuh rasa syukur, kami mengundang keluarga, kerabat, sahabat dan teman dekat untuk ikut merayakan hari bersejarah dalam hidup kami.”
+Zaidan Zaghlul Faqih, S.Ap  & Deva Siti Rohmah S.Pd
+29 November 2026
 
 Kepada Yth.
 ${nama}
 
-Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
-
-Detail lengkap acara dapat dilihat melalui tautan undangan digital berikut:
-
 ${link}
 
-Atas kehadiran dan doa restunya, kami ucapkan terima kasih.
-
-Wassalamu'alaikum Warahmatullahi Wabarakatuh.`;
+Merupakan suatu kehormatan besar bagi kami apabila berkenan hadir. Semoga langkah kecil ini menjadi awal yang baik bagi kehidupan rumah tangga kami. Terima kasih atas doa dan restu nya untuk kami berdua.
+Wassalamu'alaikum Warahmatullahi Wabarakatuh. 
+Hormat kami,
+Deva & Zaidan`;
 }
 
 // Generate link undangan
