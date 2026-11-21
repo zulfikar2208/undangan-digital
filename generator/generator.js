@@ -29,12 +29,15 @@ function formatNama(nama) {
 
 // Membuat pesan undangan
 function buatPesan(nama, link) {
-    return `Assalamu'alaikum Warahmatullahi Wabarakatuh.
+    return `_Assalamu'alaikum Warahmatullahi Wabarakatuh_.
 
 Dengan memohon Rahmat dan Ridho Allah SWT, 
-Bismillahirrahmanirrahim
+_Bismillahirrahmanirrahim_
 Dengan penuh rasa syukur, kami mengundang keluarga, kerabat, sahabat dan teman dekat untuk ikut merayakan hari bersejarah dalam hidup kami.”
-Zaidan Zaghlul Faqih, S.Ap  & Deva Siti Rohmah S.Pd
+
+*Zaidan Zaghlul Faqih, S.Ap*  
+Dengan
+*Deva Siti Rohmah S.Pd*
 29 November 2026
 
 Kepada Yth.
@@ -42,8 +45,12 @@ ${nama}
 
 ${link}
 
-Merupakan suatu kehormatan besar bagi kami apabila berkenan hadir. Semoga langkah kecil ini menjadi awal yang baik bagi kehidupan rumah tangga kami. Terima kasih atas doa dan restu nya untuk kami berdua.
-Wassalamu'alaikum Warahmatullahi Wabarakatuh. 
+Merupakan suatu kehormatan besar bagi kami
+apabila berkenan hadir. Semoga langkah kecil 
+ini menjadi awal yang baik bagi kehidupan rumah tangga kami. 
+Terima kasih atas doa dan restu nya untuk kami berdua.
+
+_Wassalamu'alaikum Warahmatullahi Wabarakatuh._ 
 Hormat kami,
 Deva & Zaidan`;
 }
