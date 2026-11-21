@@ -33,7 +33,6 @@ function buatPesan(nama, link) {
 
 Dengan memohon Rahmat dan Ridho Allah SWT,
 _Bismillahirrahmanirrahim_
-
 Dengan penuh rasa syukur, kami mengundang keluarga, kerabat, sahabat dan teman dekat untuk ikut merayakan hari bersejarah dalam hidup kami.”
 
 *Zaidan Zaghlul Faqih, S.Ap*
