@@ -188,3 +188,57 @@ toggleBtn?.addEventListener('click', () => {
     toggleBtn.textContent = 'Tutup';
   }
 });
+
+function copyRek(id, button) {
+  const number = document.getElementById(id)?.textContent?.trim();
+  if (!number) {
+    alert('Nomor rekening tidak ditemukan.');
+    return;
+  }
+
+  const fallbackCopy = () => {
+    const textarea = document.createElement('textarea');
+    textarea.value = number;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    textarea.remove();
+    if (!copied) throw new Error('Browser gagal menyalin nomor rekening.');
+  };
+
+  const showCopied = () => {
+    const originalText = button.dataset.originalText || button.textContent.trim();
+    button.dataset.originalText = originalText;
+    button.textContent = 'Tersalin!';
+    window.setTimeout(() => {
+      button.textContent = originalText;
+    }, 1500);
+  };
+
+  if (window.isSecureContext && navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(number)
+      .then(showCopied)
+      .catch((clipboardError) => {
+        console.warn('Clipboard API gagal; mencoba metode cadangan.', clipboardError);
+        try {
+          fallbackCopy();
+          showCopied();
+        } catch (error) {
+          console.error('Gagal menyalin nomor rekening.', error);
+          alert('Nomor rekening gagal disalin. Silakan salin secara manual.');
+        }
+      });
+    return;
+  }
+
+  try {
+    fallbackCopy();
+    showCopied();
+  } catch (error) {
+    console.error('Gagal menyalin nomor rekening.', error);
+    alert('Nomor rekening gagal disalin. Silakan salin secara manual.');
+  }
+}

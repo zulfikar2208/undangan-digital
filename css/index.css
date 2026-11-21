@@ -294,8 +294,8 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
 
   width: 100%;
   max-width: 450px;
-  margin: 10px auto 20px;
-  padding: clamp(15px, 4vw, 25px) 15px;
+  margin: 20px auto;
+  padding: clamp(25px, 6vw, 35px) 15px;
 
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
@@ -304,6 +304,7 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -319,28 +320,34 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
 
 .countdown {
   color: rgb(207, 198, 198);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: clamp(20px, 5vw, 40px) 20px;
   border-radius: 10px;
-  margin-top: -60px;
+  margin-top: 0;
 }
 
 .countdown h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.3rem, 5vw, 2rem);
-  margin-bottom: 15px;
+  font-size: clamp(1.4rem, 5.2vw, 2.1rem);
+  margin: 0 0 15px;
 }
 
 .time-box {
   display: flex;
   justify-content: center;
-  gap: clamp(25px, 2vw, 10px);
+  gap: clamp(0.2rem, 1.8vw, 0.5rem);
+  max-width: 100%;
   font-family: 'Inter', sans-serif;
 }
 
 .time {
-  width: clamp(0.70rem, 15vw, 70px);
-  padding: 8px 6px;
+  width: clamp(40px, 13vw, 50px);
+  padding: 9px 2px;
 
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(4px);
@@ -354,13 +361,13 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
 }
 
 .time h3 {
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(15px, 4.2vw, 19px);
   margin: 0;
   transition: all 0.4s ease;
 }
 
 .time p {
-  font-size: clamp(10px, 2.5vw, 12px);
+  font-size: clamp(11px, 2.7vw, 13px);
   margin-top: 6px;
 }
 
@@ -536,9 +543,9 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
   overflow: hidden;
   width: 95%;
   max-width: 340px;
-  min-height: 280px;
+  min-height: 220px;
   box-sizing: border-box;
-  padding: clamp(0.75rem, 3vw, 1.125rem) clamp(1rem, 4vw, 1.5rem);
+  padding: clamp(0.25rem, 1vw, 0.5rem) clamp(1rem, 4vw, 1.5rem);
   text-align: center;
   margin: 0 auto;
   z-index: 1;
@@ -548,7 +555,7 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
   margin-top: 20px;
 
 }
@@ -572,14 +579,14 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(1.7rem, 5.5vw, 2rem);
   color: #271e1e;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.2rem;
 }
 
 .event-date {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
 }
 
 .event-date span {
@@ -600,20 +607,21 @@ color: white;display: flex;flex-direction: column;justify-content: center;align-
 .event-time {
   font-size: clamp(0.85rem, 2.8vw, 0.98rem);
   color: #161111;
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.1rem;
 }
 
 .event-place {
   font-size: clamp(0.95rem, 3vw, 1.1rem);
   color: #1b1212;
-  line-height: 1.35;
+  line-height: 1.2;
   margin: 0;
+  margin-bottom: 0.2rem;
 }
 
 .btn-lokasi {
   display: inline-block;
-  margin-top: 6px;
-  padding: clamp(8px, 2vw, 10px) clamp(18px, 5vw, 24px);
+  margin-top: 2px;
+  padding: clamp(6px, 1.5vw, 8px) clamp(18px, 5vw, 24px);
   background: linear-gradient(to bottom, #c9a96e, #a0784a);
   color: #fff;
   text-decoration: none;
@@ -688,7 +696,7 @@ background:
 }
 
 .sub-card {
-  background-image: url(../img/credit-card.png);
+  background-image: url(../img/credit_card_BSI.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -705,6 +713,10 @@ background:
     opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.9s cubic-bezier(0.4, 0, 0.2, 1),
     filter 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-card:nth-child(2) {
+  background-image: url(../img/credit_card_DANA.png);
 }
 
 .gift-card.active .sub-card:nth-child(1) {
@@ -760,7 +772,7 @@ button {
 
 .copy-btn {
   position: absolute;
-  bottom: 18px;
+  bottom: 32px;
   right: 13px;
   padding: 6px 12px;
   font-size: 14px;
@@ -912,7 +924,7 @@ background: linear-gradient(
   }
 
   .event-card {
-    min-height: 440px;
+    min-height: 280px;
   }
 }
 
@@ -930,7 +942,7 @@ background: linear-gradient(
   }
 
   .time {
-    width: 50px;
+    width: clamp(40px, 13vw, 50px);
   }
 
   .event-card {
@@ -946,7 +958,7 @@ background: linear-gradient(
   }
 
   .time {
-    width: 50px;
+    width: clamp(40px, 13vw, 50px);
   }
 
   .event-card {
@@ -985,7 +997,7 @@ font-family: "Poppins", sans-serif;
   }
 
   .event-card {
-    min-height: 440px;
+    min-height: 280px;
   }
 }
 
@@ -1003,7 +1015,7 @@ font-family: "Poppins", sans-serif;
   }
 
   .time {
-    width: 50px;
+    width: clamp(40px, 13vw, 50px);
   }
 
   .event-card {
@@ -1020,7 +1032,7 @@ font-family: "Poppins", sans-serif;
   }
 
   .time {
-    width: 50px;
+    width: clamp(40px, 13vw, 50px);
   }
 
   .event-card {
